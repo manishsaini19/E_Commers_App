@@ -11,7 +11,7 @@ function Layout__File1({ img, title, number, text ,offer , price, id  }) {
     <>
     <div className="w-full h-auto cursor-pointer   hover:scale-105 transition-transform">
         <Link to={`/category/${id}`} className="text-start w-full  object-cover  ">
-          <img src={img} className="w-full h-96 rounded-3xl hover:shadow-lg object-cover" />
+          <img src={img} className="w-full h-96 rounded-3xl hover:shadow-lg object-contain" />
           <p className="font-bold text-md md:text-lg lg:text-xl pt-5 ">
             {title}
           </p>
