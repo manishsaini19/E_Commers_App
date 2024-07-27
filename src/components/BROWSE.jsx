@@ -31,12 +31,12 @@ function BROWSE({id}) {
         <img src={image__11} className='w-full  h-96  rounded-3xl object-cover  bg-white hover:bg-gray-200 transition-transform' alt="" />
         <h1 className='absolute top-7 left-10 text-2xl lg:text-3xl font-bold'>Casual</h1>
         </Link>
-        <Link to={`/category/${id}`}  className='w-full h-auto sm:w-full md:w-7/12   rounded-3xl  md:mb-0 relative'>
+        <Link to={`/category/${id}`}  className='w-full h-auto sm:w-full md:w-7/12 mt-10   rounded-3xl  md:mb-0 relative'>
         <img src={image__13} className='w-full  h-96 rounded-3xl object-cover  bg-white hover:bg-gray-200 transition-transform' alt="" />
         <h1 className='absolute top-7 left-10 text-2xl lg:text-3xl font-bold'>Formal</h1>
         </Link>
       </div>
-      <div className=' w-full h-auto sm:flex-wrap md:flex   xl:gap-20 lg:gap-10 gap-8 justify-center  mt-10 md:mt-10'>
+      <div className=' w-full h-auto sm:flex-wrap md:flex   xl:gap-20 lg:gap-10 gap-8 justify-center mb-10 mt-10 md:mt-10'>
       <Link to={`/category/${id}`}  className='w-full h-auto  sm:w-full md:w-7/12 rounded-3xl  md:mb-0 relative '>
         <img src={image__12} className='w-full  h-96 rounded-3xl object-cover  bg-white hover:bg-gray-200 transition-transform' alt="" />
         <h1 className='absolute top-7 left-10 text-2xl lg:text-3xl font-bold'>Party</h1>
