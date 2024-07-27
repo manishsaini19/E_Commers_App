@@ -97,7 +97,7 @@ function Layout({ products, isLoading }) {
         </button>
       </div>
       <BROWSE />
-      <HAPPY/> 
+      {/* <HAPPY/>  */}
     </>
   );
 }
