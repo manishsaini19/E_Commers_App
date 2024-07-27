@@ -26,7 +26,7 @@ function BROWSE({id}) {
 </div>  
        ))}
 </div> */}
-      <div className=' w-full h-auto sm:flex-wrap md:flex   xl:gap-10 lg:gap-10 gap-8 justify-center'>
+      <div className=' w-full h-auto sm:flex-wrap md:flex   xl:gap-10 lg:gap-10 gap-20 justify-center'>
         <Link to={`/category/${id}`}  className='w-full h-auto sm:w-full md:w-4/12  rounded-3xl  sm:mb-10 mb-10 md:mb-0 relative  '>
         <img src={image__11} className='w-full  h-96  rounded-3xl object-cover  bg-white hover:bg-gray-200 transition-transform' alt="" />
         <h1 className='absolute top-7 left-10 text-2xl lg:text-3xl font-bold'>Casual</h1>
@@ -36,7 +36,7 @@ function BROWSE({id}) {
         <h1 className='absolute top-7 left-10 text-2xl lg:text-3xl font-bold'>Formal</h1>
         </Link>
       </div>
-      <div className=' w-full h-auto sm:flex-wrap md:flex   xl:gap-20 lg:gap-10 gap-8 justify-center mb-10 mt-10 md:mt-10'>
+      <div className=' w-full h-auto sm:flex-wrap  md:flex   xl:gap-20 lg:gap-10 gap-20 justify-center mb-10 mt-10 md:mt-10'>
       <Link to={`/category/${id}`}  className='w-full h-auto  sm:w-full md:w-7/12 rounded-3xl  md:mb-0 relative '>
         <img src={image__12} className='w-full  h-96 rounded-3xl object-cover  bg-white hover:bg-gray-200 transition-transform' alt="" />
         <h1 className='absolute top-7 left-10 text-2xl lg:text-3xl font-bold'>Party</h1>
