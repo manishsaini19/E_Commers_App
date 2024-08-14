@@ -4,6 +4,7 @@ import Commoncompo from "../components/Commoncompo";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import axios from "axios";
+import BrowseStyle from "../components/BrowseStyle";
 function Home() {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -30,6 +31,7 @@ function Home() {
       <Navbar />
       <Commoncompo />
       <Layout products={products} isLoading={isLoading} />
+      <BrowseStyle />
       <Footer />
     </div>
   );

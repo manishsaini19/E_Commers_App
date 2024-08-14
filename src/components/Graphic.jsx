@@ -7,7 +7,7 @@ import E__1 from "../assets/E__commimags/E__1.png";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa6";
-function  Graphic({product}) {
+function Graphic({ product }) {
   let Links = [
     { name: "Home ", link: "/" },
     { name: "Shop ", link: "/category/:id" },
@@ -17,12 +17,12 @@ function  Graphic({product}) {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-if (product) {
-  setCounter(product.price);
-  setCounter(product.price);
-  setCounter(product.price);
-}
-  },[product])
+    if (product) {
+      setCounter(product.price);
+      setCounter(product.price);
+      setCounter(product.price);
+    }
+  }, [product]);
   return (
     <>
       <div className="  mt-20  w-full h-auto 2xl:px-0 md:px-10 ">
@@ -43,26 +43,34 @@ if (product) {
 
       <div className="w-11/12 mx-auto h-auto my-10 lg:w-10/12 lg:flex justify-between gap-10">
         <div className="lg:w-6/12 h-auto flex flex-col-reverse sm:flex sm:flex-row  gap-5 ">
-            <div className="sm:w-3/12 sm:flex sm:flex-col flex flex-row  gap-3">
-              <div className="w-full h-auto  p-5 rounded-3xl hover:scale-105 transition hover:shadow-md">
-                <img src={product?.image} alt="" className=" bg-gray-100 w-40  " />
-              </div>
-              <div className="w-full h-auto  p-5 hover:scale-105  transition hover:shadow-md  rounded-3xl">
-                <img src={product?.image} alt="" className=" w-40" />
-              </div>
-              <div className="w-full h-auto  p-5 hover:scale-105    transition hover:shadow-md  rounded-3xl">
-                <img src={product?.image} alt="" className="w-40"/>
-              </div>
+          <div className="sm:w-3/12 sm:flex sm:flex-col flex flex-row  gap-3">
+            <div className="w-full h-auto  p-5 rounded-3xl hover:scale-105 transition hover:shadow-md">
+              <img
+                src={product?.image}
+                alt=""
+                className=" bg-gray-100 w-40  "
+              />
             </div>
-            <div className="sm:w-9/12 w-full p-10 h-auto hover:scale-105 transition hover:shadow-md rounded-3xl">
-              <img src={product?.image} alt="" className="w-full  object-cover rounded-3xl "/>
+            <div className="w-full h-auto  p-5 hover:scale-105  transition hover:shadow-md  rounded-3xl">
+              <img src={product?.image} alt="" className=" w-40" />
             </div>
+            <div className="w-full h-auto  p-5 hover:scale-105    transition hover:shadow-md  rounded-3xl">
+              <img src={product?.image} alt="" className="w-40" />
+            </div>
+          </div>
+          <div className="sm:w-9/12 w-full p-10 h-auto hover:scale-105 transition hover:shadow-md rounded-3xl">
+            <img
+              src={product?.image}
+              alt=""
+              className="w-full  object-cover rounded-3xl "
+            />
+          </div>
         </div>
         <div className="w-full lg:w-6/12 h-auto mt-10 lg:mt-0">
           <div className=" w-full h-auto  ">
             <div className="border-b-2 ">
               <h6 className="sm:text-5xl text-4xl  uppercase font-bold">
-               {product?.title}
+                {product?.title}
               </h6>
               <div className="flex  gap-2 items-center mb-4 mt-4 text-2xl text-yellow-500">
                 <FaStar />
@@ -74,14 +82,17 @@ if (product) {
                 <h1 className=" text-black">{product?.rating?.rate}/5</h1>
               </div>
               <div className="flex gap-5 items-center ">
-                <h1 className="text-4xl  font-bold">$  {product?.price}</h1>
-                <s className="text-4xl  font-bold text-gray-300">  {product?.price}</s>
+                <h1 className="text-4xl  font-bold">$ {product?.price}</h1>
+                <s className="text-4xl  font-bold text-gray-300">
+                  {" "}
+                  {product?.price}
+                </s>
                 <p className="text-xl  bg-red-200 text-red-600 py-1 px-3 rounded-3xl">
-                -{product?.price}
+                  -{product?.price}
                 </p>
               </div>
               <p className="text-xl  text-gray-500 pt-5 pb-5 ">
-               {product?.description}
+                {product?.description}
               </p>
             </div>
             <div className="border-b-2 py-7">
@@ -120,7 +131,7 @@ if (product) {
                 <span
                   onClick={() => setCounter((counter) => counter - 1)}
                   className="cursor-pointer px-3  sm:px-5"
-                >     
+                >
                   -
                 </span>
                 <p> {counter}</p>

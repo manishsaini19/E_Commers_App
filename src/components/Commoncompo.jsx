@@ -39,8 +39,8 @@ const Commoncompo = () => {
           >
             <div className="w-full h-auto md:flex  md:justify-between pt-28 px-5 sm:px-10  md:px-5 lg:px-20 xl:px-32 2xl:px-40  ">
               <div className="w-full ">
-                <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-6xl text-4xl font-bold ">
-                  FIND CLOTHES <br /> THAT MATCHES <br /> YOUR STYLE
+                <h1 className="2xl:text-7xl uppercase xl:text-6xl lg:text-5xl md:text-4xl sm:text-6xl text-4xl font-bold ">
+                  find clothes <br /> that matches <br /> your style
                 </h1>
                 <p className="pt-4 text-gray-500 pb-10 text-sm sm:text-sm md:text-sm md:pt-2 lg:pt-5 lg:text-md xl:text-md 2xl:text-lg">
                   Browse through our diverse range of meticulously crafted
