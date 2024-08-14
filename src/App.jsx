@@ -1,29 +1,27 @@
-import { useState } from 'react'
-import Home from './pages/Home'
-import Category from './pages/Category'
-import Card from './pages/Card'
-import { BrowserRouter , Routes , Route } from 'react-router-dom'
-import Product from './pages/Product'
-import LoginForm from './pages/LoginForm'
-import ScrollToTop from '../utils/ScrollToTop'
+import Home from "./pages/Home";
+import Category from "./pages/Category";
+import Card from "./pages/Card";
+import Product from "./pages/Product";
 
-function App() {
+import LoginForm from "./pages/LoginForm";
+import ScrollToTop from "../utils/ScrollToTop";
 
-  return (
-    <>
-    <BrowserRouter>
-    <ScrollToTop />
-    <Routes>
-      <Route path='/' element={ <Home/>} />
-      <Route path='/category/:id' element={ <Category/>} />
-      <Route path='/Card' element={ <Card/>} />
-      <Route path='/Product' element={ <Product/>} />
-      <Route path='/LoginForm' element={ <LoginForm/>} />
-    </Routes>
-    </BrowserRouter>
-  
-    </>
-  )
-}
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+import Pages from "./pages";
 
-export default App
+const route = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<Pages />}>
+      <Route path="/" element={<Home />} />
+      <Route path="/card" element={<Card />} />
+      <Route path="/category/:id" element={<Category />} />
+      <Route path="/product" element={<Product />} />
+    </Route>,
+  ),
+);
+
+export default route;
