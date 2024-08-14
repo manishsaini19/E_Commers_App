@@ -19,7 +19,7 @@ function Category() {
   const fetchData = async () => {
     try {
       const { data } = await axios.get(
-        `https://fakestoreapi.com/products/${id}`
+        `https://fakestoreapi.com/products/${id}`,
       );
       setProduct(data);
     } catch (error) {
