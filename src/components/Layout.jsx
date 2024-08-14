@@ -15,11 +15,11 @@ function ProductLayout({ products, isLoading, heading }) {
             <div className="grid grid-cols-4 mb-2" key={idx}>
               <div
                 role="status"
-                class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
+                className="space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
               >
-                <div class="flex items-center justify-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
+                <div className="flex items-center justify-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
                   <svg
-                    class="w-60 h-60 text-gray-200 dark:text-gray-600"
+                    className="w-60 h-60 text-gray-200 dark:text-gray-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -29,7 +29,7 @@ function ProductLayout({ products, isLoading, heading }) {
                   </svg>
                 </div>
 
-                <span class="sr-only">Loading...</span>
+                <span className="sr-only">Loading...</span>
               </div>
             </div>
           ))

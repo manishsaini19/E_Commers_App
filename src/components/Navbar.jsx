@@ -7,13 +7,14 @@ import Logo from "../assets/E__commimags/SHOP.CO.png";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const Links = [
-    { name: "On Sale", link: "/category/:id" },
+    { name: "On Sale", link: "/category/9" },
     { name: "New Arrivals", link: "/Card" },
     { name: "Brands", link: "/Product" },
   ];
   const [usedata, setUseData] = useState({
     search: "",
   });
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUseData({
@@ -22,7 +23,6 @@ const Navbar = () => {
     });
   };
   const [Open, setOpen] = useState(false);
-  console.log("this is user data", usedata);
 
   return (
     <>
@@ -42,11 +42,11 @@ const Navbar = () => {
           <ul
             className={`md:flex md:items-center gap-7 absolute md:static bg-white w-full md:z-auto z-[-2] left-0 md:w-auto md:pl-0 pl-10 transition-all duration-500 ease-in ${Open ? "top-[70px] opacity-100" : "top-[-300px] md:opacity-100 opacity-100"}`}
           >
-            {Links.map((Link) => (
-              <li className=" md:my-0 my-5 md:ml-3">
-                <a href={Link.link} className="hover:underline ursor-pointer">
-                  {Link.name}
-                </a>
+            {Links.map((link, idx) => (
+              <li className=" md:my-0 my-5 md:ml-3" key={idx}>
+                <Link to={link.link} className="hover:underline ursor-pointer">
+                  {link.name}
+                </Link>
               </li>
             ))}
             <div className=" items-center bg-gray-100 rounded-3xl w-[500px]  px-3 hidden xl:hidden 2xl:flex">

@@ -9,6 +9,7 @@ import gucci from "../assets/E__commimags/gucci.png";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+
 const HERO = [
   {
     img: "Vector",

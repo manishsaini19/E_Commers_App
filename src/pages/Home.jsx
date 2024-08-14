@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import axios from "axios";
 import BrowseStyle from "../components/BrowseStyle";
+
 function Home() {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);

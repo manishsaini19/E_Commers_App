@@ -11,11 +11,12 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import Pages from "./pages";
 
 const route = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
-      <Route path="/" element={<Home />}></Route>
+    <Route element={<Pages />}>
+      <Route path="/" element={<Home />} />
       <Route path="/card" element={<Card />} />
       <Route path="/category/:id" element={<Category />} />
       <Route path="/product" element={<Product />} />
