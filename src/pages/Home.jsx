@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 import Commoncompo from "../components/Commoncompo";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer";
 import axios from "axios";
 import BrowseStyle from "../components/BrowseStyle";
 
@@ -29,11 +27,9 @@ function Home() {
 
   return (
     <div>
-      <Navbar />
       <Commoncompo />
       <Layout products={products} isLoading={isLoading} />
       <BrowseStyle />
-      <Footer />
     </div>
   );
 }

@@ -1,11 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Pages = () => {
   return (
     <div>
-      <h1>This is the main page or parent page!</h1>
+      <Navbar />
       <Outlet />
+      <Footer />
     </div>
   );
 };

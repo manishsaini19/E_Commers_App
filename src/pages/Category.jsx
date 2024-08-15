@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Graphic from "../components/Graphic";
-import Navbar from "../components/Navbar";
 import Reviews from "../components/Reviews";
 import E__9 from "../assets/E__commimags/E__9.png";
 import E__15 from "../assets/E__commimags/E__15.png";
 import E__8 from "../assets/E__commimags/E__8.png";
 import E__12 from "../assets/E__commimags/E__12.png";
 import Layout__File1 from "../components/Layout__File1";
-import Footer from "../components/Footer";
 import axios from "axios";
 import { useLocation, useParams } from "react-router-dom";
 
@@ -33,7 +31,6 @@ function Category() {
 
   return (
     <>
-      <Navbar />
       <Graphic product={product} />
       <Reviews product={product} />
       <div className="w-full h-auto text-center  2xl:px-32 sm:pt-20 2xl:pb-0 xl:px-20 xl:pb-0  lg:px-16  lg:pb-0 md:px-10 md:pb-0 sm:px-10 sm:pb-0 p-5">
@@ -78,7 +75,6 @@ function Category() {
           />
         </div>
       </div>
-      <Footer />
     </>
   );
 }
