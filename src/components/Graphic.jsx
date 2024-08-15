@@ -27,14 +27,14 @@ function Graphic({ product }) {
     <>
       <div className="  mt-20  w-full h-auto 2xl:px-0 md:px-10 ">
         <div className=" 2xl:w-10/12 xl:11/12 m-auto h-auto py-5 px-2 sm:p-5 border-t-2">
-          <div className="flex justify-start gap-2 sm:gap-5 ">
+          <div className="flex justify-start gap-2 sm:gap-5">
             {Links.map((link) => (
               <li
                 key={link.name}
                 className="list-none flex text-sm sm:text-md items-center gap-3  hover:scale-125 transition uppercase"
               >
                 <a href={link.link}>{link.name}</a>
-                <TbMathGreater />
+                <TbMathGreater className="size-3" />
               </li>
             ))}
           </div>
