@@ -15,7 +15,7 @@ import Pages from "./pages";
 
 const route = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<Pages />}>
+    <Route path="/" element={<Pages />}>
       <Route path="/" element={<Home />} />
       <Route path="/card" element={<Card />} />
       <Route path="/category/:id" element={<Category />} />

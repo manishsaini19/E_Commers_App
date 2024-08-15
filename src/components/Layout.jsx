@@ -9,7 +9,7 @@ function ProductLayout({ products, isLoading, heading }) {
         {heading}
       </h1>
 
-      <div className="grid grid-cols-4  gap-5 justify-center">
+      <div className="grid grid-cols-2 md:grid-cols-4  gap-5 justify-center">
         {isLoading
           ? [...new Array(4)].map((_, idx) => (
             <div className="grid grid-cols-4 mb-2" key={idx}>
